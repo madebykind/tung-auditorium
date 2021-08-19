@@ -1,0 +1,149 @@
+@import url('normalize.css');
+
+body {
+  font-size: 16px;
+  font-family:  'Montserrat', sans-serif;
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  color: #444c50;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 75vw;
+  max-width: 64rem;
+}
+
+.logo {
+  width: 50vw;
+  max-width: 18.75rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.subscribe-form {
+  background-color: white;
+  border-radius: 0.125rem;
+  border: 1px solid #89959b;
+}
+
+.subscribe-form input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.subscribe-form input:focus {
+  outline: none;
+}
+
+.subscribe-form input::placeholder {
+  color: #89959b;
+}
+
+.subscribe-form input:-ms-input-placeholder {
+  color: #89959b;
+}
+
+.subscribe-form input::-ms-input-placeholder {
+  color: #89959b;
+}
+
+.subscribe-form button {
+  width: 100%;
+  background-color: #ac441e;
+  border: none;
+  padding: .5rem;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 48rem) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .subscribe-form input {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .subscribe-form button {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+}
+
+
+@media screen and (min-width: 80rem) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .subscribe-form {
+    position: relative;
+  }
+
+  .subscribe-form input {
+    width: 50rem;
+    padding-right: 10.5rem;
+  }
+
+  .subscribe-form button {
+    width: 10rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
