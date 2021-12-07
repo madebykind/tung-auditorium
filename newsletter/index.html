@@ -35,17 +35,54 @@
     <link href="https://www.tungauditorium.org" rel="canonical">
     <link href="https://www.tungauditorium.org" rel="home">
     <link type="text/plain" href="https://thetungauditorium.com/humans.txt" rel="author">
-    <meta name="theme-color" content="#1d242c">
+    <script type="text/javascript" src="/js/signup.js" defer></script>
   </head>
   <body>
-    <div class="section container container--dark-bg container--full-height">
+    <div class="section container container--dark-bg">
 
       <div class="content-wrapper">
 
         <div class="content content--invert">
           <img src="/images/logo.png" class="logo" alt="The Tung Auditorium logo">
-          <h1>Opening March 2022</h1>
-          <p><strong>The Tung Auditorium</strong> is a brand new, state-of-the-art concert hall situated within the Yoko Ono Lennon Centre, part of the University of Liverpool.</p>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="section container">
+
+      <div class="content-wrapper">
+        <div class="content">
+          <h2>Newsletter sign-up</h2>
+          <div id="newsletter-form">
+            <p>Sign up to our newsletter for the latest upcoming performances, offers and news.</p>
+
+            <p class="error hidden" id="error"></p>
+
+            <form action="https://system.spektrix.com/thetungauditorium/website/secure/signup.aspx" method="POST" class="subscribe-form">
+              <input
+                  type="hidden"
+                  name="ReturnUrl"
+                  value="https://thetungauditorium.com/newsletter"
+              />
+
+              <label for="FirstName" class="sr-only">First Name:</label>
+              <input name="FirstName" id="FirstName" type="text" placeholder="First name" required>
+
+              <label for="LastName" class="sr-only">Last Name:</label>
+              <input name="LastName" id="LastName" type="text" placeholder="Last name" required>
+
+              <label for="Email" class="sr-only">Email Address:</label>
+              <input name="Email" id="Email"  type="email" placeholder="your@email.com" required>
+
+              <input type="submit" name="submit" value="Sign up" class="button">
+            </form>
+          </div>
+
+          <div class="hidden" id="newsletter-thanks">
+            <p>Thanks, you're signed up. We'll be in touch soon.</p>
+          </div>
+
         </div>
       </div>
     </div>
