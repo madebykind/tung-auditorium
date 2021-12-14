@@ -163,9 +163,12 @@ p {
 @media screen and (min-width: 42rem) {
 
   .events__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    columns: 2;
     gap: 1rem;
+  }
+
+  .event {
+    break-inside: avoid;
   }
 }
 
