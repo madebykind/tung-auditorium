@@ -6,30 +6,13 @@ body {
   color: #1d242c;
 }
 
-.EventDates {
-  display: flex;
-  gap: 1rem;
-  position: relative;
+/* BASICS */
+.ErrorMessage {
+ color: #ac441e;
 }
 
-.EventDates:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    margin-top: -9px;
-    width: 30px;
-    height: 18px;
-    background-image: url("https: //thetungauditorium.com/images/arrow.svg");
-    left: 275px;
-}
-
-.EventDatesList {
-  padding: 1rem 3rem 1rem 1rem;
-  border: 2px solid #d1d3d4;
-  width: 320px;
-}
-
-.Button {
+.Button,
+.CheckoutLink {
   background-color: #deb4a5;
   border: 2px solid #deb4a5;
   padding: 0.625rem 1.5625rem;
@@ -37,10 +20,295 @@ body {
   color: #1d242c;
   transition: all 250ms;
   cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .Button:hover,
-.Button:focus {
+.Button:focus,
+.CheckoutLink:hover,
+.CheckoutLink:focus {
   background-color: transparent;
   color: #1d242c;
+}
+
+.EventDates {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  
+}
+
+.EventDates:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    width: 24px;
+    height: 16px;
+    background-image: url("https://thetungauditorium.com/images/arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    left: 275px;
+}
+
+.EventDatesList {
+  padding: 1rem 3rem 1rem 1rem;
+  border: 2px solid #d1d3d4;
+  width: 320px;
+  appearance: none;
+}
+
+
+/* SEAT SELECTION */
+.ChooseSeatsHeading {
+  margin-bottom: 2rem;
+}
+
+.EventDetails {
+  font-size: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.EventName {
+  font-size: 2.5rem;
+  font-weight: bold;
+  order: 2;
+}
+
+.DateAndTime {
+  font-size: 1rem;
+  margin-bottom: 0.625rem;
+}
+
+.AreaAndVenueDetails {
+  font-size: 1rem;
+}
+
+.SeatingAreaInstructions {
+  font-weight: bold;
+}
+
+/* BASKET */
+
+.Items {
+}
+
+.Items .Header {
+  display: none;
+}
+
+.Items dt,
+.Items dd {
+  width: 100%;
+}
+
+.Items .Header .Breakdown {  
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.Items .Breakdown .Quantity,
+.Items .Breakdown .Total {
+  flex: 1;
+}
+
+.Items .Breakdown .Total {
+  text-align: right;
+}
+
+.Items dt.Item.Instance {
+  width: 100%;
+  font-size: 1rem;
+  margin: 0 0 1rem;
+  font-weight: 700;
+}
+
+.Items dd.Item.Instance {
+  width: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 1rem;
+  margin: 0 0 1rem;
+  font-weight: 700;
+}
+
+.Items .Instance .Details {
+  width: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.Items .ViewDetails {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.Items .ViewDetails a {
+  color: #1d242c;
+}
+
+.Items .ViewDetails + .Breakdown {
+  display: flex;
+  margin: 0 0 1rem;
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.Items .Buttons {
+  flex: 1;
+  margin-right: 0.625rem;
+}
+
+.ItemEditButton,
+.ItemDeleteButton {
+  font-size: 1rem;
+  padding: 0.3125rem 0.625rem;
+}
+
+.Footer {
+  flex: 1;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+  border-top: 1px solid #1d242c;
+  padding-top: 1rem;
+}
+
+dt.Footer {
+  display: none;
+}
+
+.Footer .Breakdown { 
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.OptionalMessage {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .Items {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .Items .Header {
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin: 0 0 1rem;
+    font-weight: 700;
+    border-bottom: 1px solid #1d242c;
+    padding-bottom: 1rem;
+  }
+
+  .Items dt {
+    width: 75%;
+  }
+
+  .Items dd {
+    width: 25%;
+  }
+
+  .Items dt.Item.Instance {
+    width: 75%;
+  }
+
+  .Items .ViewDetails + .Breakdown .Quantity .Label,
+  .Items .ViewDetails + .Breakdown .Total .Label {
+    display: none;
+  }
+
+  .Items .ViewDetails + .Breakdown {
+    position: absolute;
+    top: 3.125rem;
+    right: 0;
+    width: 25%;
+    margin: 0;
+  }
+
+}
+
+.CheckoutLink
+
+
+
+
+/* STANDARD TYPOGRAPHY */
+h1, .EventName {
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  margin-top:  0;
+}
+
+
+@media screen and (min-width: 48rem) {
+  h1, .EventName {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+}
+
+
+@media screen and (min-width: 80rem) {
+  h1, .EventName {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  p {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
 }
