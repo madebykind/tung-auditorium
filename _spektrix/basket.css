@@ -7,6 +7,11 @@ body {
 }
 
 /* BASICS */
+
+.SpektrixPage {
+  padding-bottom: 3rem;
+}
+
 .ErrorMessage {
  color: #ac441e;
 }
@@ -32,33 +37,6 @@ body {
   color: #1d242c;
 }
 
-.EventDates {
-  display: flex;
-  gap: 1rem;
-  position: relative;
-  
-}
-
-.EventDates:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    margin-top: -8px;
-    width: 24px;
-    height: 16px;
-    background-image: url("https://thetungauditorium.com/images/arrow.svg");
-    background-repeat: no-repeat;
-    background-size: 1.5rem;
-    left: 275px;
-}
-
-.EventDatesList {
-  padding: 1rem 3rem 1rem 1rem;
-  border: 2px solid #d1d3d4;
-  width: 320px;
-  appearance: none;
-}
-
 
 /* SEAT SELECTION */
 .ChooseSeatsHeading {
@@ -69,10 +47,11 @@ body {
   font-size: 0;
   display: flex;
   flex-direction: column;
+  margin-bottom: 0;
 }
 
 .EventName {
-  font-size: 2.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   order: 2;
 }
@@ -84,6 +63,10 @@ body {
 
 .AreaAndVenueDetails {
   font-size: 1rem;
+}
+
+.SeatingAreaHeading {
+  border-top: 1px solid #1d242c;
 }
 
 .SeatingAreaInstructions {
@@ -206,6 +189,7 @@ dt.Footer {
   }
 
   .Items .Header {
+    display: block;
     flex-shrink: 0;
     flex-grow: 0;
     margin: 0 0 1rem;
@@ -241,13 +225,24 @@ dt.Footer {
 
 }
 
-.CheckoutLink
+.TicketType label {
+  font-weight:  700;
+  margin-bottom: 0.5rem;
+}
+
+.TicketType input {
+  padding: 0.625rem 1rem;
+  border: 2px solid #d1d3d4;
+  margin: 0 0.5rem 1rem;
+  width: 1rem;
+  text-align: center;
+}
 
 
 
 
 /* STANDARD TYPOGRAPHY */
-h1, .EventName {
+h1 {
   font-size: 1.75rem;
   line-height: 1.2;
 }
@@ -260,7 +255,7 @@ h2 {
 h3 {
   font-size: 1.1rem;
   line-height: 1.2;
-  margin: 0;
+  margin: 0 0 0.5rem;
 }
 
 p {
@@ -272,7 +267,7 @@ p {
 
 
 @media screen and (min-width: 48rem) {
-  h1, .EventName {
+  h1 {
     font-size: 2.5rem;
   }
 
@@ -282,7 +277,7 @@ p {
 
   h3 {
     font-size: 1.4rem;
-    margin: 0;
+    margin: 0 0 0.5rem;
   }
 
   p {
@@ -293,7 +288,7 @@ p {
 
 
 @media screen and (min-width: 80rem) {
-  h1, .EventName {
+  h1 {
     font-size: 4rem;
   }
 
@@ -303,7 +298,7 @@ p {
 
   h3 {
     font-size: 2rem;
-    margin: 0;
+    margin: 0 0 0.5rem;
   }
 
   p {
@@ -311,4 +306,165 @@ p {
     margin-bottom: 3rem;
   }
 
+}
+
+/* Checkout */
+
+.spx-main-container {
+  line-height: 1.5;
+}
+
+.spx-section-container {
+  border-top: 1px solid #eed9d2;
+  margin-top: 1rem;
+}
+
+.spx-section-container:first-child {
+  border-top: none;
+  margin-top: 0;
+}
+
+.spx-subsection-container {
+  margin-bottom: 2rem;
+}
+
+.spx-section-container,
+.spx-subsection-container {
+  position: relative;
+}
+
+.spx-section-container,
+.spx-subsection-container {
+  position: relative;
+}
+
+.spx-link-edit {  
+  position: absolute;
+  right: 0;
+  font-size: 1rem;
+  color: #1d242c;
+}
+
+.spx-section-container .spx-link-edit {  
+  top: 0.625rem;
+}
+
+.spx-subsection-container .spx-link-edit {  
+  top: 0.3125rem;
+}
+
+.spx-list-summary {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.spx-list-item {
+  margin-bottom: 1rem;
+}
+
+.spx-sublist-summary {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.spx-data-email,
+.spx-data-phone-number {
+  display: block;
+}
+
+.spx-data-email:before {
+  content: "Email: ";
+  font-weight: bold;
+}
+
+.spx-data-first-name:before {
+  content: "Name: ";
+  font-weight: bold;
+}
+
+.spx-data-phone-number:before {
+  content: "Phone: ";
+  font-weight: bold;
+}
+
+.spx-label-field {
+  font-weight: 700;
+  display: block;
+}
+
+.spx-input-text {
+  padding: 0.3125rem 1rem;
+  border: 2px solid #d1d3d4;
+  margin: 0 0 1rem 0.5rem;
+}
+
+.spx-button-tertiary {
+  background-color: #deb4a5;
+  border: 2px solid #deb4a5;
+  font-size: 1rem;
+  padding: 0.3125rem 0.625rem;
+  font-weight: 700;
+  color: #1d242c;
+  transition: all 250ms;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.spx-button-tertiary:hover,
+.spx-button-tertiary:focus {
+  background-color: transparent;
+  color: #1d242c;
+}
+
+
+.spx-label-field__checkout--credit {
+  display: inline-block;
+}
+
+.spx-input-text__checkout--credit {
+  margin: 0 0.5rem;
+}
+
+.spx-input-checkbox {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.spx-text-copy__checkout--credit {
+  margin: 1rem 0;
+  display: block;
+}
+
+.spx-text-copy__checkout--credit .spx-text-copy__checkout--credit {
+  display: inline;
+}
+
+.spx-field-container__checkout--credit {
+  margin-top:  0.5rem;
+}
+
+
+.spx-button-primary {
+  background-color: #deb4a5;
+  border: 2px solid #deb4a5;
+  padding: 0.625rem 1.5625rem;
+  font-weight: 700;
+  color: #1d242c;
+  transition: all 250ms;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.spx-button-primary:hover,
+.spx-button-primary:focus {
+  background-color: transparent;
+  color: #1d242c;
+}
+
+.spx-list-item__checkout--final-summary .spx-intent-distinguishable {
+  font-weight: 700;
 }
