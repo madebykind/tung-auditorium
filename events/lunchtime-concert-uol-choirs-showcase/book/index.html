@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" href="/images/favicon-196x196.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="/css/app.css">
     <title>The Tung Auditorium</title>
     <meta name="description" content="Liverpool's new state-of-the art performance stage, seating up to 400 people with space for a 70 piece orchestra.">
     <meta name="robots" content="all">
@@ -36,50 +36,35 @@
     <link href="https://thetungauditorium.com" rel="home">
     <link type="text/plain" href="https://thetungauditorium.com/humans.txt" rel="author">
     <meta name="theme-color" content="#1d242c">
+    <script type="text/javascript" src="https://tickets.thetungauditorium.com/thetungauditorium/website/scripts/integrate.js"></script>
+    <script language="javascript">
+        var spektrixMinHeight = 300;
+    </script>
   </head>
   <body>
-    <div class="section container container--dark-bg container--full-height">
+    <div class="container container--dark-bg">
 
       <div class="content-wrapper">
 
         <div class="content content--invert">
-          <img src="images/logo.png" class="logo" alt="The Tung Auditorium logo">
-          <h1>Opening February 2022</h1>
-          <p><strong>The Tung Auditorium</strong> is a brand new, state-of-the-art concert hall situated within the Yoko Ono Lennon Centre, part of the University of Liverpool.</p>
+          <img src="/images/logo.png" class="logo" alt="The Tung Auditorium logo">
+        </div>
+      </div>
+    </div>
+    <div class=" container">
 
-
-          <div class="events">
-            <h2>Upcoming events</h2>
-            <div class="events__wrapper">
-              <div class="event">
-                <p class="event__datetime">2nd February 2022</p>
-                <h3 class="event__title">Return of the Lunchtime Concert Series</h3>
-              </div>
-              <div class="event">
-                <p class="event__datetime">29th March 2022</p>
-                <h3 class="event__title">Paul Lewis piano recital</h3>
-              </div>
-              <div class="event">
-                <p class="event__datetime">21st April 2022</p>
-                <h3 class="event__title">Ensemble 10/10</h3>
-              </div>
-              <div class="event">
-                <p class="event__datetime">30th April 2022</p>
-                <h3 class="event__title">Trish Clowes</h3>
-              </div>
-              <div class="event">
-                <p class="event__datetime">14th May 2022</p>
-                <h3 class="event__title">Liverpool Mozart Orchestra</h3>
-              </div>
-              <div class="event">
-                <p class="event__datetime">27th May 2022</p>
-                <h3 class="event__title">Solem Quartet</h3>
-              </div>
-              <div class="event">
-                <p class="event__datetime">17th June 2022</p>
-                <h3 class="event__title">Manchester Collective</h3>
-              </div>
-            </div>
+      <div class="content-wrapper">
+        <div class="content">
+          <h1>Book tickets</h1>
+          <h2>Lunchtime Concert UOL Choirs Showcase</h2>
+          <div>
+            <iframe
+              name="SpektrixIFrame"
+              id="SpektrixIFrame"
+              src="https://system.spektrix.com/thetungauditorium/website/EventDetails.aspx?EventId=201&resize=true"
+              frameborder="0"
+              language="javascript"
+              onload="setTimeout(function(){ window.scrollTo(0,0);}, 100)"></iframe>
           </div>
         </div>
       </div>

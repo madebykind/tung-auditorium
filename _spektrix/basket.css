@@ -1,0 +1,46 @@
+@import url('https://thetungauditorium.com/css/normalize.css');
+
+body {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: #1d242c;
+}
+
+.EventDates {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+
+.EventDates:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+    width: 30px;
+    height: 18px;
+    background-image: url("https: //thetungauditorium.com/images/arrow.svg");
+    left: 275px;
+}
+
+.EventDatesList {
+  padding: 1rem 3rem 1rem 1rem;
+  border: 2px solid #d1d3d4;
+  width: 320px;
+}
+
+.Button {
+  background-color: #deb4a5;
+  border: 2px solid #deb4a5;
+  padding: 0.625rem 1.5625rem;
+  font-weight: 700;
+  color: #1d242c;
+  transition: all 250ms;
+  cursor: pointer;
+}
+
+.Button:hover,
+.Button:focus {
+  background-color: transparent;
+  color: #1d242c;
+}
