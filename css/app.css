@@ -34,7 +34,8 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .island--dark {
@@ -52,6 +53,11 @@ img {
 .section {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.section--small {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .content-wrapper {
@@ -98,6 +104,7 @@ h4 {
 p {
   font-size: 1rem;
   line-height: 1.875;
+  margin: 0;
   margin-bottom: 1rem;
 }
 
@@ -108,6 +115,7 @@ p.lede {
 
 .breadcrumb {
   margin-top: 2rem;
+  margin-bottom: 1rem;
   color: #EED9D2;
 }
 
@@ -271,7 +279,7 @@ p.lede {
 }
 
 .promoter-logo {
-  margin: 1rem 0 0 0;
+  margin: 1rem 0 1rem 0;
 }
 
 .promoter-logo img {
@@ -281,6 +289,62 @@ p.lede {
 .promoter-logo figcaption {
   font-weight:  700;
 }
+
+.footer {
+  background-color: #AC441E;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  color: #EED9D2;
+}
+
+.footer__logos {
+  display: flex;
+  align-items: center;
+  gap: 4.875rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.footer__content,
+.footer__content p {
+  font-size: 0.875rem;
+  line-height: 1.3;
+}
+
+.footer__columns {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer__nav {
+
+}
+
+.footer__nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__nav .footer__nav-item {
+  margin-bottom: 1rem;
+  
+}
+
+.footer a {
+  font-weight: 700;
+  color: #EED9D2;
+  text-decoration: none;
+  transition: all 250ms;
+}
+
+.footer a:hover,
+.footer a:focus {
+  text-decoration: underline;
+  color: white;
+}
+
 
 
 @media screen and (min-width: 42rem) {
@@ -311,7 +375,8 @@ p.lede {
   }
 
   .container {
-    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .content-wrapper {
@@ -323,7 +388,13 @@ p.lede {
   }
 
   .section {
-    padding: 4rem 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .section--small {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .island--none--large {
@@ -391,6 +462,16 @@ p.lede {
 
   .meta__more {
     width: 100%;
+  }
+
+  .footer__columns--large {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+  }
+
+  .footer__columns {
+    gap: 3rem;
   }
 
 
