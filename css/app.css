@@ -270,6 +270,18 @@ p.lede {
   padding-left: 0.25rem;
 }
 
+.promoter-logo {
+  margin: 1rem 0 0 0;
+}
+
+.promoter-logo img {
+
+}
+
+.promoter-logo figcaption {
+  font-weight:  700;
+}
+
 
 @media screen and (min-width: 42rem) {
 

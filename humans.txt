@@ -1,0 +1,15 @@
+/* TEAM */
+
+Creator: Kind
+URL: https://madebykind.com
+Description: A digital agency with purpose.
+
+/* THANKS */
+
+Spektrix - https://spektrix.com
+Github Pages - https://pages.github.com/
+
+/* SITE */
+
+Standards: HTML5, CSS3
+Components: Spektrix, Static HTML and CSS
