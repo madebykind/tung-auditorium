@@ -379,6 +379,14 @@ p {
   font-weight: bold;
 }
 
+.spx-text-copy__checkout--set-password.spx-data-email {
+  margin-bottom: 1rem;
+}
+
+.spx-text-copy__checkout--set-password.spx-data-email:before {
+  content: none;
+}
+
 .spx-data-first-name:before {
   content: "Name: ";
   font-weight: bold;
@@ -394,11 +402,25 @@ p {
   display: block;
 }
 
-.spx-input-text {
-  padding: 0.3125rem 1rem;
-  border: 2px solid #d1d3d4;
-  margin: 0 0 1rem 0.5rem;
+.spx-label-field__checkout--order-summary {
+  display: inline-block;
 }
+
+.spx-input-text {
+  padding: 0.625rem 1rem;
+  border: 2px solid #d1d3d4;
+  margin: 0;
+}
+
+.spx-field-container {
+  margin-bottom: 1rem;
+}
+
+label.spx-label-field__checkout--credit + .spx-input-text {
+  padding: 0.3125rem 1rem;
+  margin-left: 0.5rem;
+}
+
 
 .spx-button-tertiary {
   background-color: #deb4a5;
@@ -467,4 +489,31 @@ p {
 
 .spx-list-item__checkout--final-summary .spx-intent-distinguishable {
   font-weight: 700;
+}
+
+.spx-validation-copy {
+  margin-bottom: 1rem;
+}
+
+.spx-validation-summary-errors {
+  background-color: #ac441e;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.spx-validation-errorlist ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.spx-validation-errorlist a {
+  color: white;
+}
+
+.spx-validation-field-error {
+  color: #ac441e;
+  display: block;
+  font-size: 0.75em;
 }
