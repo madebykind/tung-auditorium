@@ -8,10 +8,10 @@ const errorEl = document.getElementById("error");
 let errorText;
 
 
-  console.log(error);
+
 // If exists, handle error
 if(error) {
-  console.log(errorEl);
+
   switch(error) {
     case "NoEmail":
       errorText = "You didn't enter an email address."
@@ -34,7 +34,7 @@ if(error) {
     default:
       errorText = "Something went wrong."
   }
-  console.log(errorEl);
+
 
   errorEl.innerHTML = errorText + " Please try again."
   errorEl.classList.remove("hidden");
