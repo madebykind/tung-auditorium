@@ -219,7 +219,6 @@ p.lede {
   margin-bottom: 3rem;
 }
 
-
 .event__cta {
   background-color: #DEB4A5;
   border: 2px solid #DEB4A5;
@@ -380,7 +379,7 @@ p.lede {
 
 .footer__columns {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .footer__nav {
@@ -533,12 +532,21 @@ p.lede {
 
   .footer__columns--large {
     display: flex;
-    gap: 3rem;
+    gap: 4rem;
     justify-content: space-between;
   }
 
   .footer__columns {
-    gap: 3rem;
+    gap: 4rem;
+  }
+
+  .reorder--large {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reorder--large > *:first-child {
+    order: 2;
   }
 
 
