@@ -439,7 +439,12 @@ p.lede {
 }
 
 .cookie-notice__content > *:first-child {
-  max-width: 75%;
+  max-width: 65%;
+}
+
+.cookie-notice__link {
+  color: #1d242c;
+  white-space: nowrap;
 }
 
 .cookie-notice .button {
@@ -448,6 +453,66 @@ p.lede {
 
 .js .cookie-notice .button {
   display: block;
+}
+
+.prose h1 {
+  margin-bottom: 1rem;
+
+}
+
+.prose h2 {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.prose h3 {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+
+}
+
+.prose p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.prose ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.prose ul li {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.prose ul li:before {
+  content: "";
+  background-color: #ac441e;
+  border-radius: 100%;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  left: 0;
+  top: 7px;
+
+}
+
+.prose a {
+  color: #AC441E;
+  transition: all 250ms;
+}
+
+
+.prose a:hover,
+.prose a:focus {
+  color: #BC694B;
 }
 
 
