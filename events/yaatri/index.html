@@ -9,17 +9,17 @@
     <link rel="apple-touch-icon" href="/images/favicon-196x196.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="stylesheet" href="/css/app.css">
+    <script type="text/javascript" src="/js/app.js"></script>
+    <script type="text/javascript" src="/js/signup.js" defer></script>
     <title>Yaatri | The Tung Auditorium</title>
-    <meta name="description" content="Yaatri is an award winning five-piece artrock/jazz crossover group formed in Leeds in 2018. Their blend of complex composition
-and ethereal soundscapes captivates the heart as well as the mind.">
+    <meta name="description" content="Yaatri is an award winning five-piece artrock/jazz crossover group formed in Leeds in 2018. Their blend of complex composition and ethereal soundscapes captivates the heart as well as the mind.">
     <meta name="robots" content="all">
     <meta content="en_GB" property="og:locale">
     <meta content="Yaatri" property="og:site_name">
     <meta content="website" property="og:type">
     <meta content="https://thetungauditorium.com/" property="og:url">
     <meta content="Yaatri" property="og:title">
-    <meta content="Yaatri is an award winning five-piece artrock/jazz crossover group formed in Leeds in 2018. Their blend of complex composition
-and ethereal soundscapes captivates the heart as well as the mind." property="og:description">
+    <meta content="Yaatri is an award winning five-piece artrock/jazz crossover group formed in Leeds in 2018. Their blend of complex composition and ethereal soundscapes captivates the heart as well as the mind." property="og:description">
     <meta content="https://thetungauditorium.com/images/220223-yaatri.jpg" property="og:image">
     <meta content="1200" property="og:image:width">
     <meta content="630" property="og:image:height">
@@ -29,8 +29,7 @@ and ethereal soundscapes captivates the heart as well as the mind." property="og
     <meta name="twitter:site" content="@TungAuditorium">
     <meta name="twitter:creator" content="@TungAuditorium">
     <meta name="twitter:title" content="Yaatri">
-    <meta name="twitter:description" content="Yaatri is an award winning five-piece artrock/jazz crossover group formed in Leeds in 2018. Their blend of complex composition
-and ethereal soundscapes captivates the heart as well as the mind.">
+    <meta name="twitter:description" content="Yaatri is an award winning five-piece artrock/jazz crossover group formed in Leeds in 2018. Their blend of complex composition and ethereal soundscapes captivates the heart as well as the mind.">
     <meta name="twitter:image" content="https://thetungauditorium.com/images/220223-yaatri.jpg">
     <meta name="twitter:image:width" content="800">
     <meta name="twitter:image:height" content="418">
@@ -97,17 +96,35 @@ and ethereal soundscapes captivates the heart as well as the mind.">
       </div>
     </div>
 
-    <div class="container section--small">
+    <div class="section--small container">
 
       <div class="content-wrapper">
         <div class="content">
+          <h2>Newsletter sign-up</h2>
+          <p>Sign up to our newsletter for the latest upcoming performances, offers and news.</p>
 
-          <a href="book" class="button">Book tickets</a>
+          <form action="https://tickets.thetungauditorium.com/thetungauditorium/website/secure/signup.aspx" method="POST" class="subscribe-form">
+            <input
+                type="hidden"
+                name="ReturnUrl"
+                value="https://thetungauditorium.com/newsletter"
+            />
+
+            <label for="FirstName" class="sr-only">First Name:</label>
+            <input name="FirstName" id="FirstName" type="text" placeholder="First name" required>
+
+            <label for="LastName" class="sr-only">Last Name:</label>
+            <input name="LastName" id="LastName" type="text" placeholder="Last name" required>
+
+            <label for="Email" class="sr-only">Email Address:</label>
+            <input name="Email" id="Email"  type="email" placeholder="your@email.com" required>
+
+            <input type="submit" name="submit" value="Sign up" class="button button--link">
+          </form>
 
         </div>
       </div>
     </div>
-
 
 
     <footer class="footer container">
@@ -127,9 +144,9 @@ and ethereal soundscapes captivates the heart as well as the mind.">
 
             <nav class="footer__nav">
               <ul>
-                <li class="footer__nav-item"><a href="/terms-and-conditions">Terms and Conditions</a></li>
-                <li class="footer__nav-item"><a href="/accessibility">Accessibility</a></li>
-                <li class="footer__nav-item"><a href="/privacy-policy">Privacy Policy</a></li>
+                <li class="footer__nav-item"><a href="/policies/terms-and-conditions">Terms and Conditions</a></li>
+                <li class="footer__nav-item"><a href="/visit/access">Access</a></li>
+                <li class="footer__nav-item"><a href="/policies/privacy-policy">Privacy Policy</a></li>
               </ul>
             </nav>
 
@@ -149,6 +166,20 @@ and ethereal soundscapes captivates the heart as well as the mind.">
 
       </div>
     </footer>
+
+
+    <div data-cookie-notice class="cookie-notice container">
+      <div class="content-wrapper">
+        <div class="cookie-notice__content">
+          <div>
+            <h2>Cookie Consent</h2>
+            <p>We use cookies to improve your online experience and track performance of our website. If you continue, we&rsquo;ll assume that you are happy to receive all cookies. You can change cookie settings in your browser at any time.</p>
+          </div>
+          <button class="button" onclick="acceptCookieConsent();">Accept</button>
+          <a href="/policies/cookies" class="cookie-notice__link">Find out more</a>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>

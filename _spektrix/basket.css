@@ -8,10 +8,6 @@ body {
 
 /* BASICS */
 
-.SpektrixPage {
-  padding-bottom: 3rem;
-}
-
 .ErrorMessage {
  color: #ac441e;
 }
@@ -379,6 +375,14 @@ p {
   font-weight: bold;
 }
 
+.spx-text-copy__checkout--set-password.spx-data-email {
+  margin-bottom: 1rem;
+}
+
+.spx-text-copy__checkout--set-password.spx-data-email:before {
+  content: none;
+}
+
 .spx-data-first-name:before {
   content: "Name: ";
   font-weight: bold;
@@ -394,14 +398,65 @@ p {
   display: block;
 }
 
-.spx-input-text {
-  padding: 0.3125rem 1rem;
-  border: 2px solid #d1d3d4;
-  margin: 0 0 1rem 0.5rem;
+.spx-label-field__checkout--order-summary {
+  display: inline-block;
 }
 
-.spx-button-tertiary {
+.spx-input-text {
+  padding: 0.625rem 1rem;
+  border: 2px solid #d1d3d4;
+  margin: 0;
+}
+
+.spx-field-container {
+  margin-bottom: 1rem;
+}
+
+label.spx-label-field__checkout--credit + .spx-input-text {
+  padding: 0.3125rem 1rem;
+  margin-left: 0.5rem;
+}
+
+
+.spx-button-primary {
   background-color: #deb4a5;
+  border: 2px solid #deb4a5;
+  padding: 0.625rem 1.5625rem;
+  font-weight: 700;
+  color: #1d242c;
+  transition: all 250ms;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.spx-button-primary:hover,
+.spx-button-primary:focus {
+  background-color: transparent;
+  color: #1d242c;
+}
+
+
+.spx-button-secondary {
+  background: none;
+  border: none;
+  padding: 0.625rem 1.5625rem;
+  font-weight: 700;
+  color: #1d242c;
+  transition: all 250ms;
+  cursor: pointer;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.spx-button-secondary:hover,
+.spx-button-secondary:focus {
+  color: #000000;
+}
+
+
+.spx-button-tertiary {
+  background-color: transparent;
   border: 2px solid #deb4a5;
   font-size: 1rem;
   padding: 0.3125rem 0.625rem;
@@ -415,7 +470,7 @@ p {
 
 .spx-button-tertiary:hover,
 .spx-button-tertiary:focus {
-  background-color: transparent;
+  background-color: #deb4a5;
   color: #1d242c;
 }
 
@@ -446,25 +501,98 @@ p {
   margin-top:  0.5rem;
 }
 
-
-.spx-button-primary {
-  background-color: #deb4a5;
-  border: 2px solid #deb4a5;
-  padding: 0.625rem 1.5625rem;
-  font-weight: 700;
-  color: #1d242c;
-  transition: all 250ms;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.spx-button-primary:hover,
-.spx-button-primary:focus {
-  background-color: transparent;
-  color: #1d242c;
-}
-
 .spx-list-item__checkout--final-summary .spx-intent-distinguishable {
   font-weight: 700;
+}
+
+.spx-validation-copy {
+  margin-bottom: 1rem;
+}
+
+.spx-validation-summary-errors {
+  background-color: #ac441e;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.spx-validation-errorlist ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.spx-validation-errorlist a {
+  color: white;
+}
+
+.spx-validation-field-error {
+  color: #ac441e;
+  display: block;
+  font-size: 0.75em;
+}
+
+.spx-wikitext-container {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.spx-wikitext-container a,
+.spx-link__checkout--new-address {
+  color: #1d242c;
+}
+
+.spx-fieldset-container {
+  border: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.spx-legend-guide {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.spx-field-container__checkout--gift-aid,
+.spx-field-container__checkout--contact-preferences,
+.spx-field-container__checkout--payment-method {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+.spx-field-container__checkout--gift-aid label {
+  font-weight: normal;
+}
+
+.spx-list-contact-preferences,
+.spx-list-contact-preference-groups__checkout--contact-preferences {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.spx-input-dropdown__checkout--new-address {
+  display: block;
+  margin: 0.5rem 0 1rem;
+  width: 25rem;
+}
+
+.PaymentOptions .Container {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.PaymentOptions .Container label:first-of-type {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.PaymentOptions .Container input,
+.PaymentOptions .Container select {
+  padding: 0.625rem 1rem;
+  border: 2px solid #d1d3d4;
+  margin: 0;
 }

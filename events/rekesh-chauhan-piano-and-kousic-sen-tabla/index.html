@@ -9,6 +9,8 @@
     <link rel="apple-touch-icon" href="/images/favicon-196x196.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="stylesheet" href="/css/app.css">
+    <script type="text/javascript" src="/js/app.js"></script>
+    <script type="text/javascript" src="/js/signup.js" defer></script>
     <title>Rekesh Chauhan (Piano) and Kousic Sen (Tabla) | The Tung Auditorium</title>
     <meta name="description" content="Multi-award-winning British pianist and composer, and iTunes World Charts Top 3 artist Rekesh Chauhan, returns to Liverpool for a concert of Indian classical music.">
     <meta name="robots" content="all">
@@ -65,37 +67,67 @@
       </div>
     </div>
 
-    <div class="container section--small island--light island--none--large">
+    <div class="reorder--large">
+      <div class="container section--small island--light island--none--large">
 
-      <div class="content-wrapper">
-        <div class="content meta-container">
+        <div class="content-wrapper">
+          <div class="content meta-container">
 
-          <ul class="meta">
-            <li><strong>Wednesday 9 February 2022</strong>, 1:00pm</li>
-            <li><strong>Tickets:</strong> Free (Booking Required)</li>
-          </ul>
+            <ul class="meta">
+              <li><strong>Wednesday 9 February 2022</strong>, 1:00pm</li>
+              <li><strong>Tickets:</strong> Free (Booking Required)</li>
+            </ul>
 
-          <a href="book" class="button meta__button">Book tickets</a>
+            <a href="book" class="button meta__button">Book tickets</a>
 
-          <div class="meta__more">
-            <h4>Other info</h4>
-            <figure class="promoter-logo">
-              <img src="/images/logo-milap.png" width="150">
-              <figcaption>Co-promotion with Milap</figcaption>
-            </figure>
+            <div class="meta__more">
+              <h4>Other info</h4>
+              <figure class="promoter-logo">
+                <img src="/images/logo-milap.png" width="150">
+                <figcaption>Co-promotion with Milap</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container section--small">
+
+        <div class="content-wrapper">
+          <div class="content">
+
+            <p>Rekesh was awarded ‘Young Musician of the Year’ at the National Indian Arts Awards in 2018 and has collaborated with a range of musicians from Nobel Peace Prize performers to Mercury Prize Award winners. Rekesh is joined in this concert by internationally renowned tabla maestro and Milap Artist-in-Residence Kousic Sen.</p>
+
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container section--small">
+    <div class="section--small container">
 
       <div class="content-wrapper">
         <div class="content">
+          <h2>Newsletter sign-up</h2>
+          <p>Sign up to our newsletter for the latest upcoming performances, offers and news.</p>
 
-          <p>Rekesh was awarded ‘Young Musician of the Year’ at the National Indian Arts Awards in 2018 and has collaborated with a range of musicians from Nobel Peace Prize performers to Mercury Prize Award winners. Rekesh is joined in this concert by internationally renowned tabla maestro and Milap Artist-in-Residence Kousic Sen.</p>
+          <form action="https://tickets.thetungauditorium.com/thetungauditorium/website/secure/signup.aspx" method="POST" class="subscribe-form">
+            <input
+                type="hidden"
+                name="ReturnUrl"
+                value="https://thetungauditorium.com/newsletter"
+            />
 
-          <a href="book" class="button">Book tickets</a>
+            <label for="FirstName" class="sr-only">First Name:</label>
+            <input name="FirstName" id="FirstName" type="text" placeholder="First name" required>
+
+            <label for="LastName" class="sr-only">Last Name:</label>
+            <input name="LastName" id="LastName" type="text" placeholder="Last name" required>
+
+            <label for="Email" class="sr-only">Email Address:</label>
+            <input name="Email" id="Email"  type="email" placeholder="your@email.com" required>
+
+            <input type="submit" name="submit" value="Sign up" class="button button--link">
+          </form>
 
         </div>
       </div>
@@ -120,9 +152,9 @@
 
             <nav class="footer__nav">
               <ul>
-                <li class="footer__nav-item"><a href="/terms-and-conditions">Terms and Conditions</a></li>
-                <li class="footer__nav-item"><a href="/accessibility">Accessibility</a></li>
-                <li class="footer__nav-item"><a href="/privacy-policy">Privacy Policy</a></li>
+                <li class="footer__nav-item"><a href="/policies/terms-and-conditions">Terms and Conditions</a></li>
+                <li class="footer__nav-item"><a href="/visit/access">Access</a></li>
+                <li class="footer__nav-item"><a href="/policies/privacy-policy">Privacy Policy</a></li>
               </ul>
             </nav>
 
@@ -142,6 +174,20 @@
 
       </div>
     </footer>
+
+
+    <div data-cookie-notice class="cookie-notice container">
+      <div class="content-wrapper">
+        <div class="cookie-notice__content">
+          <div>
+            <h2>Cookie Consent</h2>
+            <p>We use cookies to improve your online experience and track performance of our website. If you continue, we&rsquo;ll assume that you are happy to receive all cookies. You can change cookie settings in your browser at any time.</p>
+          </div>
+          <button class="button" onclick="acceptCookieConsent();">Accept</button>
+          <a href="/policies/cookies" class="cookie-notice__link">Find out more</a>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>

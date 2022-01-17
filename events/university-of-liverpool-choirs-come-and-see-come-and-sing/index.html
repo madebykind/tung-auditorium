@@ -9,6 +9,8 @@
     <link rel="apple-touch-icon" href="/images/favicon-196x196.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="stylesheet" href="/css/app.css">
+    <script type="text/javascript" src="/js/app.js"></script>
+    <script type="text/javascript" src="/js/signup.js" defer></script>
     <title>University of Liverpool Choirs: Come and See, Come and Sing | The Tung Auditorium</title>
     <meta name="description" content="Be part of the first public audience to enter The Tung Auditorium with this showcase of choral activity at the University of Liverpool.">
     <meta name="robots" content="all">
@@ -65,34 +67,64 @@
       </div>
     </div>
 
-    <div class="container section--small island--light island--none--large">
+    <div class="reorder--large">
+      <div class="container section--small island--light island--none--large">
 
-      <div class="content-wrapper">
-        <div class="content meta-container">
+        <div class="content-wrapper">
+          <div class="content meta-container">
 
-          <ul class="meta">
-            <li><strong>Wednesday 2 February 2022</strong>, 1:00pm</li>
-            <li><strong>Tickets:</strong> Free (Booking Required)</li>
-          </ul>
+            <ul class="meta">
+              <li><strong>Wednesday 2 February 2022</strong>, 1:00pm</li>
+              <li><strong>Tickets:</strong> Free (Booking Required)</li>
+            </ul>
 
-          <a href="book" class="button meta__button">Book tickets</a>
+            <a href="book" class="button meta__button">Book tickets</a>
 
-          <div class="meta__more">
-            <h4>Other info</h4>
-            <p><strong>Louise Ellinson</strong> Director</p>
+            <div class="meta__more">
+              <h4>Other info</h4>
+              <p><strong>Louise Ellinson</strong> Director</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container section--small">
+
+        <div class="content-wrapper">
+          <div class="content">
+
+            <p>The concert will feature All Voices, the Staff Choir, and the Chamber Choir performing Vivaldi&rsquo;s Gloria. The University&rsquo;s Choral Director Louise Ellinson will also create opportunities for you to test out the venue&rsquo;s acoustic using your own vocal chords.</p>
+
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container section--small">
+    <div class="section--small container">
 
       <div class="content-wrapper">
         <div class="content">
+          <h2>Newsletter sign-up</h2>
+          <p>Sign up to our newsletter for the latest upcoming performances, offers and news.</p>
 
-          <p>The concert will feature All Voices, the Staff Choir, and the Chamber Choir performing Vivaldi&rsquo;s Gloria. The University&rsquo;s Choral Director Louise Ellinson will also create opportunities for you to test out the venue&rsquo;s acoustic using your own vocal chords.</p>
+          <form action="https://tickets.thetungauditorium.com/thetungauditorium/website/secure/signup.aspx" method="POST" class="subscribe-form">
+            <input
+                type="hidden"
+                name="ReturnUrl"
+                value="https://thetungauditorium.com/newsletter"
+            />
 
-          <a href="book" class="button">Book tickets</a>
+            <label for="FirstName" class="sr-only">First Name:</label>
+            <input name="FirstName" id="FirstName" type="text" placeholder="First name" required>
+
+            <label for="LastName" class="sr-only">Last Name:</label>
+            <input name="LastName" id="LastName" type="text" placeholder="Last name" required>
+
+            <label for="Email" class="sr-only">Email Address:</label>
+            <input name="Email" id="Email"  type="email" placeholder="your@email.com" required>
+
+            <input type="submit" name="submit" value="Sign up" class="button button--link">
+          </form>
 
         </div>
       </div>
@@ -115,9 +147,9 @@
 
             <nav class="footer__nav">
               <ul>
-                <li class="footer__nav-item"><a href="/terms-and-conditions">Terms and Conditions</a></li>
-                <li class="footer__nav-item"><a href="/accessibility">Accessibility</a></li>
-                <li class="footer__nav-item"><a href="/privacy-policy">Privacy Policy</a></li>
+                <li class="footer__nav-item"><a href="/policies/terms-and-conditions">Terms and Conditions</a></li>
+                <li class="footer__nav-item"><a href="/visit/access">Access</a></li>
+                <li class="footer__nav-item"><a href="/policies/privacy-policy">Privacy Policy</a></li>
               </ul>
             </nav>
 
@@ -137,6 +169,20 @@
 
       </div>
     </footer>
+
+
+    <div data-cookie-notice class="cookie-notice container">
+      <div class="content-wrapper">
+        <div class="cookie-notice__content">
+          <div>
+            <h2>Cookie Consent</h2>
+            <p>We use cookies to improve your online experience and track performance of our website. If you continue, we&rsquo;ll assume that you are happy to receive all cookies. You can change cookie settings in your browser at any time.</p>
+          </div>
+          <button class="button" onclick="acceptCookieConsent();">Accept</button>
+          <a href="/policies/cookies" class="cookie-notice__link">Find out more</a>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>
