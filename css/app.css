@@ -426,20 +426,9 @@ p.lede {
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.15);
 }
 
-.cookie-notice__content {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .cookie-notice__content h2 {
   font-size: 1.25rem;
   line-height: 1.2;
-}
-
-.cookie-notice__content > *:first-child {
-  max-width: 65%;
 }
 
 .cookie-notice__link {
@@ -453,6 +442,7 @@ p.lede {
 
 .js .cookie-notice .button {
   display: block;
+  margin-bottom: 1rem;
 }
 
 .prose h1 {
@@ -651,6 +641,17 @@ p.lede {
 
   .reorder--large > *:first-child {
     order: 2;
+  }
+
+  .cookie-notice__content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .js .cookie-notice__content .button {
+    margin-bottom: 0;
   }
 
 
