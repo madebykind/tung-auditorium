@@ -145,6 +145,7 @@ body {
 .Items .Buttons {
   flex: 1;
   margin-right: 0.625rem;
+  margin-bottom: 0;
 }
 
 .ItemEditButton,
@@ -402,13 +403,15 @@ p {
   display: inline-block;
 }
 
-.spx-input-text {
+.spx-input-text,
+.Input_Text {
   padding: 0.625rem 1rem;
   border: 2px solid #d1d3d4;
   margin: 0;
 }
 
-.spx-field-container {
+.spx-field-container,
+.Container {
   margin-bottom: 1rem;
 }
 
@@ -417,6 +420,23 @@ label.spx-label-field__checkout--credit + .spx-input-text {
   margin-left: 0.5rem;
 }
 
+
+.Container label.left {
+  display: inline-block;
+  width: 10rem;
+}
+
+.Account_Link {
+  font-size: 1rem;
+}
+
+.Link {
+  color: #1d242c;
+}
+
+.Buttons {
+  margin-bottom: 0.625rem;
+}
 
 .spx-button-primary {
   background-color: #deb4a5;
